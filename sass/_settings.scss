@@ -1,0 +1,22 @@
+$first-color: #f2e205;
+$second-color: #f2cb05;
+$third-color: #f28705;
+$fourth-color: #f25c05;
+$fifth-color: #d92b04;
+$sixth-color: #736b02;
+/* Resoluciones a mostrarse */
+$mobile: 1300px;
+$desktop: 1366px;
+$height: 636px;
+$max-width: 1440px;
+/* Using media Querys with mixin sass */
+@mixin min($medida) {
+  @media screen and (min-width: $medida) {
+    @content;
+  }
+}
+@mixin max($medida) {
+  @media screen and (min-width: $medida) {
+    @content;
+  }
+}

@@ -1,0 +1,45 @@
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+  }
+  
+  header > :first-child  {
+    background: #0f0f0f !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    height: 80px;
+  }
+  .nav-link {
+    color: #ece6e6 !important;
+  }
+  
+  .nav-link:hover {
+    color: #a7dcee !important;
+  }
+  
+  .navbar-collapse {
+    -webkit-box-flex: 0 !important;
+        -ms-flex-positive: 0 !important;
+            flex-grow: 0 !important;
+  }
+  
+main {
+    background-image : url("https://wallpaper.dog/large/17127355.gif");
+    background-repeat: repeat-x;
+    margin: 0 auto 0 auto;
+    padding-bottom: 80px;
+    max-width: 1350px;
+  }
+  .hielo {
+    color: #fcfcfc;
+  }
+  
+  .hielo:hover {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 16px #fbfcfc, 0 0 30px #00f7ff, 0 0 40px #00f7ff, 0 0 60px #00f7ff, 0 0 80px #00f7ff, 0 0 90px #00f7ff;
+  }
+
+  p{
+    font-size: 17px;
+  }

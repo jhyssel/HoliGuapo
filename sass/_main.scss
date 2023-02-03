@@ -1,0 +1,450 @@
+main {
+  background: $third-color;
+  margin: 0 auto 0 auto;
+  padding-bottom: 20px;
+  max-width: $max-width;
+}
+.card-group {
+  margin-bottom: 80px;
+  @include min(300px) {
+    flex-direction: column !important;
+    margin-bottom: 40px;
+  }
+  @include min(1000px) {
+    flex-direction: row !important;
+  }
+}
+.card {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+.card:hover {
+  @include min(1000px) {
+    box-shadow: 8px 5px 10px 0 #b4b3b3;
+    transition: 0.2s;
+  }
+}
+.card-title {
+  text-align: center;
+}
+.container-audio {
+  display: flex;
+  justify-content: center;
+}
+.modal-content {
+  height: auto !important;
+}
+.modal-title {
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+}
+/* Resoluciones a mostrarse */
+/* Using media Querys with mixin sass */
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+header > :first-child {
+  background: #f28705 !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  height: 65px;
+}
+
+.container-fluid {
+  -ms-flex-pack: distribute !important;
+  justify-content: space-around !important;
+}
+
+.nav-link {
+  color: #ffffff !important;
+}
+
+.nav-link:hover {
+  color: #f2cb05 !important;
+}
+
+.navbar-collapse {
+  -webkit-box-flex: 0 !important;
+  -ms-flex-positive: 0 !important;
+  flex-grow: 0 !important;
+}
+
+.banner-fixed {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  background: url("https://wallpaperaccess.com/full/4167709.gif");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+main {
+  background: #f28705;
+  margin: 0 auto 0 auto;
+  padding-bottom: 20px;
+  max-width: 1440px;
+}
+
+.card-group {
+  margin-bottom: 80px;
+}
+
+@media screen and (min-width: 300px) {
+  .card-group {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+    -ms-flex-direction: column !important;
+    flex-direction: column !important;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .card-group {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+    -ms-flex-direction: row !important;
+    flex-direction: row !important;
+  }
+}
+
+.card {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 1000px) {
+  .card:hover {
+    -webkit-box-shadow: 8px 5px 10px 0 #b4b3b3;
+    box-shadow: 8px 5px 10px 0 #b4b3b3;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+}
+
+.card-title {
+  text-align: center;
+}
+
+.container-audio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.modal-content {
+  height: 500px;
+}
+
+.modal-title {
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+}
+
+h4 {
+  color: #ffffff;
+}
+
+span {
+  color: #ffffff;
+}
+
+.list-pokemon {
+  height: 70px;
+  background: #403e3e;
+}
+
+@media screen and (min-width: 300px) {
+  .list-pokemon {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .list-pokemon {
+    display: block;
+  }
+}
+
+.list-pokemon ul {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style: none;
+  padding: 0 20px;
+}
+
+.list-pokemon ul a {
+  color: #f2cb05;
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.list-pokemon ul a:hover {
+  color: #f2e205;
+  font-size: 60px;
+  -webkit-transition: 0s;
+  transition: 0s;
+}
+
+footer {
+  height: 450px;
+}
+
+.planta {
+  color: #93ff05;
+}
+
+.planta:hover {
+  color: #fff;
+
+  text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 16px #66ff00, 0 0 30px #66ff00,
+    0 0 40px #66ff00, 0 0 60px #66ff00, 0 0 80px #66ff00, 0 0 90px #66ff00;
+}
+
+.hielo {
+  color: #00f7ff;
+}
+
+.hielo:hover {
+  color: #fff;
+
+  text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 16px #00f7ff, 0 0 30px #00f7ff,
+    0 0 40px #00f7ff, 0 0 60px #00f7ff, 0 0 80px #00f7ff, 0 0 90px #00f7ff;
+}
+.agua {
+  color: #0099ff;
+}
+
+.agua:hover {
+  color: #fff;
+
+  text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 16px #0099ff, 0 0 30px #0099ff,
+    0 0 40px #0099ff, 0 0 60px #0099ff, 0 0 80px #0099ff, 0 0 90px #0099ff;
+}
+.electri {
+  color: #eeff00;
+}
+
+.electri:hover {
+  color: #fff;
+
+  text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 16px #eeff00, 0 0 30px #eeff00,
+    0 0 40px #eeff00, 0 0 60px #eeff00, 0 0 80px #eeff00, 0 0 90px #eeff00;
+}
+
+.bicho {
+  color: #93c72b;
+}
+
+.bicho:hover {
+  color: #fff;
+
+  text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 16px #93c72b, 0 0 30px #93c72b,
+    0 0 40px #93c72b, 0 0 60px #93c72b, 0 0 80px #93c72b, 0 0 90px #93c72b;
+}
+
+.dragon {
+  color: #a073fc;
+}
+
+.dragon:hover {
+  color: #fff;
+
+  text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 16px #a073fc, 0 0 30px #a073fc,
+    0 0 40px #a073fc, 0 0 60px #a073fc, 0 0 80px #a073fc, 0 0 90px #a073fc;
+}
+
+.fantasma {
+  color: #5c92c9;
+}
+
+.fantasma:hover {
+  color: #fff;
+
+  text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 16px #297dd1, 0 0 30px #297dd1,
+    0 0 40px #297dd1, 0 0 60px #297dd1, 0 0 80px #297dd1, 0 0 90px #297dd1;
+}
+
+.fuego {
+  color: #ff7f00;
+}
+
+.fuego:hover {
+  color: #fff;
+
+  text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 16px #ff7f00, 0 0 30px #ff7f00,
+    0 0 40px #ff7f00, 0 0 60px #ff7f00, 0 0 80px #ff7f00, 0 0 90px #ff7f00;
+}
+
+.hada {
+  color: #f596f5;
+}
+
+.hada:hover {
+  color: #fff;
+
+  text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 16px #ff61ff, 0 0 30px #ff61ff,
+    0 0 40px #ff61ff, 0 0 60px #ff61ff, 0 0 80px #ff61ff, 0 0 90px #ff61ff;
+}
+
+.acero {
+  color: #c9c9c9;
+}
+
+.acero:hover {
+  color: #fff;
+
+  text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 16px #b9a1a1, 0 0 30px #b9a1a1,
+    0 0 40px #b9a1a1, 0 0 60px #b9a1a1, 0 0 80px #b9a1a1, 0 0 90px #b9a1a1;
+}
+
+.lucha {
+  color: #ff6a6a;
+}
+
+.lucha:hover {
+  color: #fff;
+
+  text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 16px #ff4f4f, 0 0 30px #ff4f4f,
+    0 0 40px #ff4f4f, 0 0 60px #ff4f4f, 0 0 80px #ff4f4f, 0 0 90px #ff4f4f;
+}
+
+.normal {
+  color: #dbc69b;
+}
+
+.normal:hover {
+  color: #fff;
+
+  text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 16px #d6a84b, 0 0 30px #d6a84b,
+    0 0 40px #d6a84b, 0 0 60px #d6a84b, 0 0 80px #d6a84b, 0 0 90px #d6a84b;
+}
+
+.psíquico {
+  color: #ffa1b5;
+}
+
+.psíquico:hover {
+  color: #fff;
+
+  text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 16px #ff7593, 0 0 30px #ff7593,
+    0 0 40px #ff7593, 0 0 60px #ff7593, 0 0 80px #ff7593, 0 0 90px #ff7593;
+}
+
+.roca {
+  color: #d38a40;
+}
+
+.roca:hover {
+  color: #fff;
+
+  text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 16px #dd8630, 0 0 30px #dd8630,
+    0 0 40px #dd8630, 0 0 60px #dd8630, 0 0 80px #dd8630, 0 0 90px #dd8630;
+}
+
+.siniestro {
+  color: #a687af;
+}
+
+.siniestro:hover {
+  color: #fff;
+
+  text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 16px #cf9cdd, 0 0 30px #cf9cdd,
+    0 0 40px #cf9cdd, 0 0 60px #cf9cdd, 0 0 80px #cf9cdd, 0 0 90px #cf9cdd;
+}
+
+.tierra {
+  color: #dfaa64;
+}
+
+.tierra:hover {
+  color: #fff;
+
+  text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 16px #da9e50, 0 0 30px #da9e50,
+    0 0 40px #da9e50, 0 0 60px #da9e50, 0 0 80px #da9e50, 0 0 90px #da9e50;
+}
+
+.veneno {
+  color: #cc88bb;
+}
+
+.veneno:hover {
+  color: #fff;
+
+  text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 16px #cc84ba, 0 0 30px #cc84ba,
+    0 0 40px #cc84ba, 0 0 60px #cc84ba, 0 0 80px #cc84ba, 0 0 90px #cc84ba;
+}
+
+.volador {
+  color: #baaaff;
+}
+
+.volador:hover {
+  color: #fff;
+
+  text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 16px #a08cfc, 0 0 30px #a08cfc,
+    0 0 40px #a08cfc, 0 0 60px #a08cfc, 0 0 80px #a08cfc, 0 0 90px #a08cfc;
+}
+
+footer {
+  height: 450px;
+}
+.esto {
+  color: #fff;
+  text-align: center;
+}
+.pru {
+  color: #b4b3b3;
+}
+.neutro1 {
+  color: #f7f460;
+}
+.neutro2 {
+  color: #5ffa67;
+}
+.neutro3 {
+  color: #9bf1df;
+}
+
+.neutro1:hover {
+  color: #fff;
+
+  text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 16px #e0f00a, 0 0 30px #e0f00a,
+    0 0 40px #e0f00a, 0 0 60px #e0f00a, 0 0 80px #e0f00a, 0 0 90px #e0f00a;
+}
+.neutro2:hover {
+  color: #fff;
+  text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 16px #79c3f5, 0 0 30px #79c3f5,
+    0 0 40px #79c3f5, 0 0 60px #79c3f5, 0 0 80px #79c3f5, 0 0 90px #79c3f5;
+}
+.neutro3:hover {
+  color: #fff;
+  text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 16px #79f5da, 0 0 30px #79f5da,
+    0 0 40px #79f5da, 0 0 60px #79f5da, 0 0 80px #79f5da, 0 0 90px #79f5da;
+}
+
+.card-img-top {
+  height: 300px;
+  align-content: center;
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnt0o-8m5mPd0f5-BuhyWTGavTm5piz6YMSg&usqp=CAU");
+}

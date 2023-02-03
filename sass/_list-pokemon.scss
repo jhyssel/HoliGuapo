@@ -1,0 +1,30 @@
+.list-pokemon {
+  height: 70px;
+  background: #403e3e;
+  @include min(300px) {
+    display: none;
+  }
+  @include min(1000px) {
+    display: block;
+  }
+  ul {
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: 0 20px;
+    a {
+      color: $second-color;
+      text-decoration: none;
+      font-size: 40px;
+      font-weight: bold;
+    }
+    a:hover {
+      color: $first-color;
+      font-size: 60px;
+      transition: 0s;
+    }
+  }
+}

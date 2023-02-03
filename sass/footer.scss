@@ -1,0 +1,109 @@
+footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: #f85235;
+}
+.coso {
+  width: 100%;
+  font-size: 30px;
+  color: #fff;
+}
+
+.foo1 {
+  width: 35%;
+  padding: 30px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  font-family: "Fredoka One", cursive;
+}
+.foo2 {
+  width: 35%;
+  padding: 30px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  font-family: "Fredoka One", cursive;
+}
+.foo3 {
+  width: 30%;
+  padding: 30px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  font-family: "Fredoka One", cursive;
+}
+.foo4 {
+  background: #333333;
+  width: 100%;
+  padding: 30px 0;
+  text-align: center;
+  font-family: "Fredoka One", cursive;
+}
+footer a {
+  text-decoration: none;
+  color: black;
+  padding: 5px 0;
+  font-size: 21px;
+  transition: 0.5s;
+}
+footer a:hover {
+  font-size: 23px;
+  letter-spacing: 0.23em;
+  color: rgb(255, 238, 1);
+}
+
+.icono {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  padding: 5px 0;
+  font-size: 38px;
+  transition: 0.5s;
+}
+.icono:hover {
+  color: rgb(255, 238, 1);
+  transition: all ease 0.5s;
+}
+.autor {
+  font-size: 20px;
+  padding: 17px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .foo1 {
+    width: 50%;
+    background: #f85235;
+  }
+  .foo2 {
+    width: 50%;
+    background: #f85235;
+  }
+  .foo3 {
+    width: 100%;
+    background: #f85235;
+  }
+  .foo4 {
+    width: 100%;
+  }
+  .autor {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .foo1 {
+    width: 100%;
+  }
+  .foo2 {
+    width: 100%;
+  }
+  .foo3 {
+    width: 100%;
+  }
+  .foo4 {
+    width: 100%;
+  }
+  .autor {
+    font-size: 12px;
+  }
+}
